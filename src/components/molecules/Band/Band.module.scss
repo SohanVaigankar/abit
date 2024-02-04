@@ -1,0 +1,39 @@
+.BandContainer {
+  margin-top: -0.5rem;
+  padding: 1rem 0;
+  position: realtive;
+  background-color: #292828;
+  z-index: 9999;
+  width: 100%;
+
+  p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: #ffffff58;
+  }
+  .CreatorInfoCard {
+    width: 100%;
+    position: absolute;
+    bottom: 12rem;
+    padding-left: 5rem;
+
+    @media screen and (max-width: 1240px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0;
+    }
+    @media screen and (max-width: 768px) {
+      bottom: 4.65rem;
+    }
+    @media screen and (max-width: 560px) {
+      bottom: -2.35rem;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.ContentListContainer {
+  padding: 10rem 5rem 2rem 5rem;
+  background-color: #ffffff;
+  .ContentListHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .Titles {
+      .MainTitle {
+        margin: 0;
+      }
+      .SubTitle {
+        margin: 0;
+        color: #7a7a7a;
+      }
+    }
+    .Info {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      .InfoItem {
+        width: 7.5rem;
+        border-left: 1px solid #7a7a7a;
+        padding-left: 1rem;
+        .InfoItemValue {
+          margin: 0;
+          color: #565656;
+        }
+        .InfoItemLabel {
+          width: 5rem;
+          margin: 0;
+          color: #696969;
+        }
+      }
+    }
+  }
+  .ContentList {
+    margin: 3rem 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .ContentListContainer {
+    .ContentListHeader {
+      flex-direction: column;
+      gap: 3rem;
+      .Titles {
+        text-align: center;
+      }
+      .Info {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .InfoItem {
+          width: 6rem;
+          border-left: none;
+          .InfoItemLabel {
+            text-align: center;
+            width: 100%;
+          }
+          .InfoItemValue {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ContentListContainer {
+    padding: 20rem 2rem 3rem;
+    .ContentList {
+      justify-content: center;
+
+    }
+  }
+}

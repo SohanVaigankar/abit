@@ -1,0 +1,30 @@
+.AddContentCard {
+  width: 100%;
+  min-height: 300px;
+  min-width: 300px;
+  max-width: 320px;
+  max-height: 500px;
+  background-color: #ededed;
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
+  .SupportText {
+    padding: 1rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    color: #a0a0a0;
+    text-align: center;
+  }
+}
