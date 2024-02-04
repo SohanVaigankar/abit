@@ -21,7 +21,7 @@ const CreatorInfoCard = (props: CreatorInfoCardProps) => {
       <div className={classes.CardInfo}>
         <div className={classes.NameSection}>
           <h3 className={classes.UserName}>{name.toLocaleUpperCase()}</h3>
-          <span className={classes.UserChannel}>{channel_name}</span>
+          <span className={classes.UserChannel}>/{channel_name}/</span>
         </div>
         <div className={classes.BioContainer}>
           <label>Bio</label>

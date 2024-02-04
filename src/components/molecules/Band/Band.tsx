@@ -12,7 +12,7 @@ const Band = (props: BandProps) => {
   const { text } = props;
   return (
     <div className={classes.BandContainer}>
-      <p>{text}</p>
+      <p className={classes.Band}>{text}</p>
       <div className={classes.CreatorInfoCard}>
         <CreatorInfoCard
           bio={creatorData.bio}
